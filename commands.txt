@@ -1,1 +1,7 @@
 python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --train  
+python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --train  
+python ./"Flappy bird DQN project"/agent.py flappyBird_1 v1 --train 
+
+python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --run  
+python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --run  
+python ./"Flappy bird DQN project"/agent.py flappyBird_1 v1 --run  
