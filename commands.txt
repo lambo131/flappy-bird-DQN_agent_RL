@@ -1,0 +1,1 @@
+python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --train  

@@ -1,0 +1,41 @@
+creating environment CartPole-v1 for running the agent...
+
+06-11 12:28:59: Training starting...
+
+06-11 12:28:59: New best reward: 9.0 at episode 0. Model saved.
+06-11 12:28:59: New best reward: 10.0 at episode 1. Model saved.
+06-11 12:28:59: New best reward: 15.0 at episode 2. Model saved.
+06-11 12:28:59: New best reward: 18.0 at episode 3. Model saved.
+06-11 12:28:59: New best reward: 25.0 at episode 5. Model saved.
+06-11 12:29:04: New best reward: 28.0 at episode 107. Model saved.
+06-11 12:29:05: New best reward: 36.0 at episode 126. Model saved.
+06-11 12:29:05: New best reward: 39.0 at episode 127. Model saved.
+06-11 12:29:05: New best reward: 47.0 at episode 128. Model saved.
+06-11 12:29:05: New best reward: 71.0 at episode 130. Model saved.
+06-11 12:29:05: New best reward: 73.0 at episode 131. Model saved.
+06-11 12:29:05: New best reward: 104.0 at episode 132. Model saved.
+06-11 12:29:09: New best reward: 105.0 at episode 181. Model saved.
+06-11 12:29:12: New best reward: 123.0 at episode 196. Model saved.
+06-11 12:29:12: New best reward: 140.0 at episode 197. Model saved.
+06-11 12:29:19: New best reward: 159.0 at episode 226. Model saved.
+06-11 12:29:20: New best reward: 169.0 at episode 230. Model saved.
+06-11 12:29:21: New best reward: 201.0 at episode 232. Model saved.
+06-11 12:29:21: New best reward: 233.0 at episode 234. Model saved.
+06-11 12:29:25: New best reward: 292.0 at episode 239. Model saved.
+06-11 12:30:12: New best reward: 305.0 at episode 321. Model saved.
+06-11 12:30:13: New best reward: 314.0 at episode 323. Model saved.
+06-11 12:30:13: New best reward: 486.0 at episode 324. Model saved.
+06-11 12:30:24: New best reward: 671.0 at episode 346. Model saved.
+06-11 12:30:51: New best reward: 718.0 at episode 391. Model saved.
+06-11 12:30:51: New best reward: 830.0 at episode 392. Model saved.
+06-11 12:31:03: New best reward: 1169.0 at episode 399. Model saved.
+
+Training stoped after 401 episodes with average reward: 853.86
+
+
+06-11 12:31:10: Training completed. Saving agent with pickle...
+
+>>> creating environment CartPole-v1 for running the agent...
+
+>>> creating environment CartPole-v1 for running the agent...
+
