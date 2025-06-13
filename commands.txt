@@ -1,14 +1,34 @@
-python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --train  
-python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --train  
-python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train 
+___Example commands to run the Agent:___
 
-python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --run  
-python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --run  
-python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --run  
+    python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --train  
+    python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --train  
+    python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train 
+
+    python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --run  
+    python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --run  
+    python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --run  
+
+    # load experience (transition memory)
+    python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train --load_exp
+    # agent loads saved policy network weights 
+    python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train --load_policy 
 
 flags:
-'--train', action='store_true', help='Train the agent'
-'--run', action='store_true', help='Run the agent'
-"--render", action='store_true', help='Render the environment during training or running'
-"--load_exp", action='store_true', help='Load experience from file'
-"--load_policy, action='store_true', help='Load policy network from file'
+    '--train', action='store_true', help='Train the agent'
+    '--run', action='store_true', help='Run the agent'
+    "--render", action='store_true', help='Render the environment during training or running'
+    "--load_exp", action='store_true', help='Load experience from file'
+    "--load_policy, action='store_true', help='Load policy network from file'
+
+# Instructions:
+    1. create a launch json file if not so yet. 
+        - fill in the location of "agent.py" as the "program", 
+        - enter the hyperparameter set and flags
+            hyperparameter_set: cartpole_1, cartpole_2, flappybird_1, flappybird_2 (defined in hyperparameter.yml)
+            flags: read previous section
+    2. run the debug file with the launch.json configuration, or from terminal with the run arguments same as 
+        in json file
+    3. Open ./runs/{the choosen hyperparameter_set}.png to see reward-epsilon graph in real time
+    4. Open ./runs/{the choosen hyperparameter_set}.log to see the log file of the agent
+    5. click on the execution terminal.
+        - press "r" to toggle render env window (just press once and wait patiently)
