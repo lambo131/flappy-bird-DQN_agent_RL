@@ -6,30 +6,26 @@ import torch.nn.functional as F
 
 # //inherit parent class "nn.Module"
 class DQN(nn.Module):
-    def __init__(self, state_dim, action_dim, hidden_dim=128):
+    def __init__(self, state_dim, action_dim, hidden_dim=128, hidden_layers=2):
         super(DQN, self).__init__()
-
-        '''  
-            in pytorch, the input layer is implicit, no need to define the input layer
-            the first layer passed to the sequential structure will be known as the input layer
-
-            fc1, fc2, .. means "full connected"
-
-            a "linear" layer refers to a layer that performs a linear transformation on the input data
-            output=input×weights+bias
-
-
-        '''
-        self.fc1 = nn.Linear(state_dim, hidden_dim)
-        self.fc2 = nn.Linear(hidden_dim, hidden_dim)
-        self.fc3 = nn.Linear(hidden_dim, action_dim)
-
-    def forward(self, x): 
-        # // this is a sequenctial definition of the layers
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        return self.fc3(x)
-
+        
+        # Dynamically create hidden layers
+        layers = []
+        # Input layer (state_dim → hidden_dim)
+        layers.append(nn.Linear(state_dim, hidden_dim))
+        layers.append(nn.ReLU())
+        # Hidden layers (hidden_dim → hidden_dim)
+        for _ in range(hidden_layers - 1):
+            layers.append(nn.Linear(hidden_dim, hidden_dim))
+            layers.append(nn.ReLU())
+        # Output layer (hidden_dim → action_dim)
+        layers.append(nn.Linear(hidden_dim, action_dim))
+        # Combine all layers into a sequential model
+        self.net = nn.Sequential(*layers)
+    
+    def forward(self, x):
+        return self.net(x)
+    
 
 if __name__ == "__main__":
     state_dim = 12

@@ -1,0 +1,531 @@
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:23:11: Training starting...
+
+06-12 18:23:11: New best reward: 3.299999999999999 at episode 0. Model saved.
+06-12 18:23:11: New best reward: 3.8999999999999986 at episode 27. Model saved.
+06-12 18:23:12: New best reward: 4.899999999999995 at episode 57. Model saved.
+06-12 18:23:13: New best reward: 6.399999999999993 at episode 62. Model saved.
+06-12 18:23:13: New best reward: 13.399999999999972 at episode 67. Model saved.
+06-12 18:24:42: New best reward: 17.90000000000001 at episode 407. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:27:56: Training starting...
+
+06-12 18:27:57: New best reward: 3.8999999999999986 at episode 0. Model saved.
+06-12 18:27:57: New best reward: 8.999999999999984 at episode 25. Model saved.
+06-12 18:28:03: New best reward: 9.399999999999983 at episode 146. Model saved.
+06-12 18:28:04: New best reward: 12.899999999999974 at episode 151. Model saved.
+06-12 18:28:05: New best reward: 13.099999999999973 at episode 178. Model saved.
+06-12 18:28:58: New best reward: 13.499999999999972 at episode 407. Model saved.
+06-12 18:28:59: New best reward: 17.90000000000001 at episode 416. Model saved.
+06-12 18:29:00: New best reward: 18.100000000000012 at episode 439. Model saved.
+06-12 18:29:15: New best reward: 31.900000000000162 at episode 504. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:31:14: Training starting...
+
+06-12 18:31:15: New best reward: -4.499999999999998 at episode 0. Model saved.
+06-12 18:31:15: New best reward: 3.8999999999999986 at episode 3. Model saved.
+06-12 18:31:15: New best reward: 4.1999999999999975 at episode 21. Model saved.
+06-12 18:31:15: New best reward: 4.699999999999996 at episode 31. Model saved.
+06-12 18:31:15: New best reward: 8.399999999999986 at episode 33. Model saved.
+06-12 18:31:17: New best reward: 9.399999999999983 at episode 45. Model saved.
+06-12 18:31:19: New best reward: 12.899999999999974 at episode 63. Model saved.
+06-12 18:31:48: New best reward: 12.999999999999973 at episode 190. Model saved.
+06-12 18:31:52: New best reward: 18.70000000000002 at episode 272. Model saved.
+06-12 18:32:30: New best reward: 37.20000000000022 at episode 464. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:33:34: Training starting...
+
+06-12 18:36:06: New best reward: 37.300000000000225 at episode 531. Model saved.
+06-12 18:36:08: New best reward: 22.800000000000065 at episode 554. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:39:04: Training starting...
+
+06-12 18:39:14: New best reward: 22.40000000000006 at episode 38. Model saved.
+06-12 18:40:01: New best reward: 31.900000000000162 at episode 459. Model saved.
+06-12 18:40:43: New best reward: 37.00000000000022 at episode 891. Model saved.
+06-12 18:47:40: New best reward: 45.90000000000032 at episode 2248. Model saved.
+06-12 18:48:46: New best reward: 50.50000000000037 at episode 2927. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 18:53:24: Training starting...
+
+06-12 18:54:50: New best reward: 46.400000000000325 at episode 222. Model saved.
+06-12 18:55:29: New best reward: 60.600000000000485 at episode 556. Model saved.
+06-12 18:57:27: New best reward: 68.90000000000022 at episode 1088. Model saved.
+06-12 18:57:33: New best reward: 69.70000000000017 at episode 1126. Model saved.
+06-12 19:04:54: New best reward: 71.60000000000012 at episode 1929. Model saved.
+06-12 19:05:14: New best reward: 93.39999999999911 at episode 2076. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:08:37: Training starting...
+
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:12:23: Training starting...
+
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:16:56: Training starting...
+
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:18:24: Training starting...
+
+06-12 19:20:35: New best reward: 96.89999999999897 at episode 162. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:25:17: Training starting...
+
+06-12 19:25:43: New best reward: 48.30000000000034 at episode 56. Model saved.
+06-12 19:25:44: New best reward: 55.10000000000042 at episode 67. Model saved.
+06-12 19:25:45: New best reward: 59.900000000000475 at episode 72. Model saved.
+06-12 19:25:48: New best reward: 64.40000000000042 at episode 90. Model saved.
+06-12 19:25:50: New best reward: 82.8999999999996 at episode 94. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 19:30:59: Training starting...
+
+06-12 19:32:16: New best reward: 106.39999999999854 at episode 164. Model saved.
+06-12 19:48:30: New best reward: 120.09999999999799 at episode 762. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 20:02:50: Training starting...
+
+06-12 20:02:55: New best reward: 76.19999999999992 at episode 14. Model saved.
+06-12 20:03:40: New best reward: 78.39999999999979 at episode 124. Model saved.
+06-12 20:03:44: New best reward: 96.89999999999897 at episode 144. Model saved.
+06-12 20:03:47: New best reward: 120.09999999999799 at episode 154. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 20:07:16: Training starting...
+
+06-12 20:08:08: New best reward: 167.3999999999958 at episode 96. Model saved.
+06-12 20:08:18: New best reward: 250.89999999999208 at episode 133. Model saved.
+06-12 20:51:44: New best reward: 304.9000000000007 at episode 1626. Model saved.
+06-12 21:27:03: New best reward: 326.0000000000046 at episode 3165. Model saved.
+06-12 21:27:31: New best reward: 376.9000000000137 at episode 3226. Model saved.
+06-12 21:27:47: New best reward: 416.60000000002066 at episode 3256. Model saved.
+>>> creating FlappyBird-v0 for *running* the agent...
+
+>>> creating FlappyBird-v0 for *running* the agent...
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 22:37:48: Training starting...
+
+06-12 22:41:05: New best reward: 194.89999999999458 at episode 206. Model saved.
+06-12 22:41:17: New best reward: 264.89999999999367 at episode 228. Model saved.
+06-12 22:41:30: New best reward: 428.4000000000229 at episode 244. Model saved.
+06-12 22:41:34: New best reward: 530.9000000000411 at episode 245. Model saved.
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 13.305940594059344, best reward: 195.59999999999454, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 22:52:47: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len to: 13971
+
+
+>>> agent exit...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 10.887128712871275, best reward: 134.39999999999728, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:10:52: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 11354, **exp len: 0
+
+
+>>> agent exit...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 15.749504950495018, best reward: 124.89999999999772, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:11:45: Training starting...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 15.313861386138585, best reward: 134.39999999999728, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:13:04: Training starting...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 8.559405940594054, best reward: 109.29999999999843, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:14:44: Training starting...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 14.535643564356269, best reward: 223.99999999999326, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:17:20: Training starting...
+
+
+06-12 23:18:05: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 11.334653465346506, best reward: 122.89999999999783, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-12 23:20:04: Training starting...
+
+
+06-12 23:20:19: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 10.92376237623762, best reward: 96.89999999999897, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 00:29:13: Training starting...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 11354, **exp len: 0
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+    mean reward: 16.597029702970207, best reward: 190.39999999999478, 
+  +1sd reward:
+
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 00:41:58: Training starting...
+
+06-13 00:42:52: New best reward: 250.89999999999208 at episode 49. Model saved.
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 34565, **exp len: 2043
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 34565, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 15.938613861386301, best reward: 400.4000000000179, 
+	+1sd reward:
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 34565, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 11.26534653465341, best reward: 222.89999999999333
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 00:49:22: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 57948, **exp len: 2043
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 57948, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 12.112871287128742, best reward: 82.8999999999996
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 00:53:47: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 72781, **exp len: 2043
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 72781, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 14.746534653465192, best reward: 233.09999999999286
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:12:24: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 104365, **exp len: 2043
+
+
+>>> agent exit...
+
+
+06-13 01:14:12: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 104365, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 14.276237623762315, best reward: 152.89999999999645
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:19:31: Training starting...
+
+06-13 01:19:59: New best reward: 404.9000000000187 at episode 46. Model saved.
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 104365, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 9.622772277227718, best reward: 97.29999999999895
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:22:09: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 117692, **exp len: 2043
+
+
+>>> agent exit...
+
+
+06-13 01:22:45: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 117692, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 16.19207920792068, best reward: 166.89999999999583
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:24:35: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 134017, **exp len: 2043
+
+
+>>> agent exit...
+
+
+06-13 01:24:47: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 134017, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 16.932673267327164, best reward: 566.8000000000475
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:26:38: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 151246, **exp len: 2043
+
+
+>>> agent exit...
+
+
+06-13 01:26:50: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 151246, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 20.192079207920564, best reward: 221.19999999999342
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:28:36: Training starting...
+
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 200687, **exp len: 2043
+
+
+>>> agent exit...
+
+
+06-13 01:31:14: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 200687, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 13.189108910891077, best reward: 120.39999999999792
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:32:56: Training starting...
+
+06-13 01:34:15: New best reward: 180.8999999999952 at episode 73. Model saved.
+06-13 01:34:23: New best reward: 246.39999999999227 at episode 90. Model saved.
+06-13 01:34:35: New best reward: 258.7999999999925 at episode 113. Model saved.
+06-13 01:35:57: New best reward: 398.7000000000175 at episode 207. Model saved.
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 200687, **exp len: 2043
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 14.137623762376128, best reward: 236.8999999999927
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:37:24: Training starting...
+
+06-13 01:39:45: New best reward: 278.89999999999617 at episode 102. Model saved.
+06-13 01:40:43: New best reward: 316.4000000000029 at episode 267. Model saved.
+06-13 01:40:57: New best reward: 334.9000000000062 at episode 293. Model saved.
+06-13 01:41:04: New best reward: 510.8000000000375 at episode 304. Model saved.
+
+>>> Wrapping up...
+
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 79434, **exp len: 13743
+
+
+>>> agent exit...
+
+
+06-13 01:43:14: Training completed. Saving agent with pickle...
+
+>>> Loading experience from C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+current exp len: 79434, **exp len: 13743
+
+>>> creating FlappyBird-v0 for *exploring* the agent...
+
+>>> exploration completed
+	mean reward: 13.81584158415834, best reward: 143.89999999999685
+creating FlappyBird-v0 for *training* the agent...
+
+06-13 01:44:04: Training starting...
+
+06-13 01:44:37: New best reward: 269.8999999999946 at episode 50. Model saved.
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 102041, **exp len: 15940
+
+06-13 01:45:04: New best reward: 334.9000000000062 at episode 102. Model saved.
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 79652, **exp len: 18661
+
+06-13 01:45:14: New best reward: 404.9000000000187 at episode 116. Model saved.
+saving all experience to: C:\Users\ASUS\OneDrive - HKUST Connect\1_Projects\FYP\Reinforcement learning\Flappy bird DQN project\runs\flappybird_1_exp.pkl
+exp len: 49990, **exp len: 21947
+

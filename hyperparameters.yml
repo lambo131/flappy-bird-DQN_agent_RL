@@ -19,13 +19,60 @@ cartpole_1:
 # MLP learning rate
   learning_rate: 0.00005
   hidden_nodes: 128
+  hidden_layers: 2
 
 # another cartpole env with different hyperparameters
 cartpole_2:
   env_id: CartPole-v1
   action_dim: 2
   state_dim: 4
-  train_stop_reward: 800
+  train_stop_reward: 2000
+  episode_stop_reward: 2500
+
+  # replay buffer-----------
+  replay_memory_size: 100000
+  mini_batch_size: 32
+
+  # learning rate-----------
+  # // we implement deminishing learning rate 
+  initial_epsilon: 0.5
+  min_epsilon: 0.03
+  epsilon_decay: 0.995
+  discount_factor: 0.99
+  target_sync_freq: 100 # target network updates with policy network copy every N transitions
+# MLP learning rate
+  learning_rate: 0.0001
+  hidden_nodes: 128
+  hidden_layers: 2
+
+flappybird_1:
+  env_id: FlappyBird-v0
+  action_dim: 2
+  state_dim: 12
+  train_stop_reward: 1000
+  episode_stop_reward: 1200
+
+  # replay buffer-----------
+  replay_memory_size: 500000
+  mini_batch_size: 64
+
+  # learning rate-----------
+  # // we implement deminishing learning rate 
+  initial_epsilon: 0.6
+  min_epsilon: 0.01
+  epsilon_decay: 0.9995
+  discount_factor: 0.9995
+  target_sync_freq: 50 # target network updates with policy network copy every N policy training update
+# MLP learning rate
+  learning_rate: 0.000005
+  hidden_nodes: 128
+  hidden_layers: 3
+
+flappybird_2:
+  env_id: FlappyBird-v0
+  action_dim: 2
+  state_dim: 12
+  train_stop_reward: 1000
   episode_stop_reward: 1200
 
   # replay buffer-----------
@@ -34,21 +81,22 @@ cartpole_2:
 
   # learning rate-----------
   # // we implement deminishing learning rate 
-  initial_epsilon: 0.5
-  min_epsilon: 0.03
+  initial_epsilon: 0.6
+  min_epsilon: 0.002
   epsilon_decay: 0.9995
   discount_factor: 0.99
-  target_sync_freq: 100 # target network updates with policy network copy every N transitions
+  target_sync_freq: 100 # target network updates with policy network copy every N policy training update
 # MLP learning rate
-  learning_rate: 0.0001
-  hidden_nodes: 128
+  learning_rate: 0.000001
+  hidden_nodes: 64
+  hidden_layers: 4
 
-flappyBird_1:
-  env_id: FlappyBird-v0
-  action_dim: 2
-  state_dim: 4
-  train_stop_reward: 1200
-  episode_stop_reward: 1000
+mountaincar_1:
+  env_id: MountainCar-v0
+  action_dim: 3
+  state_dim: 2
+  train_stop_reward: -10
+  episode_stop_reward: 99999
 
   # replay buffer-----------
   replay_memory_size: 100000
@@ -56,11 +104,12 @@ flappyBird_1:
 
   # learning rate-----------
   # // we implement deminishing learning rate 
-  initial_epsilon: 0.5
+  initial_epsilon: 1
   min_epsilon: 0.03
   epsilon_decay: 0.9995
-  discount_factor: 0.99
-  target_sync_freq: 100 # target network updates with policy network copy every N transitions
+  discount_factor: 0.995
+  target_sync_freq: 50 # target network updates with policy network copy every N policy training update
 # MLP learning rate
-  learning_rate: 0.00005
-  hidden_nodes: 128
+  learning_rate: 0.0001
+  hidden_nodes: 64
+  hidden_layers: 2

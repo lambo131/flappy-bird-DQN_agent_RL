@@ -39,3 +39,211 @@ Training stoped after 401 episodes with average reward: 853.86
 
 >>> creating environment CartPole-v1 for running the agent...
 
+creating environment CartPole-v1 for running the agent...
+
+creating environment CartPole-v1 for running the agent...
+
+06-11 15:50:37: Training starting...
+
+06-11 15:50:37: New best reward: 12.0 at episode 0. Model saved.
+06-11 15:50:37: New best reward: 13.0 at episode 1. Model saved.
+06-11 15:50:37: New best reward: 15.0 at episode 3. Model saved.
+06-11 15:50:37: New best reward: 18.0 at episode 7. Model saved.
+06-11 15:50:37: New best reward: 25.0 at episode 17. Model saved.
+06-11 15:50:37: New best reward: 26.0 at episode 23. Model saved.
+06-11 15:50:37: New best reward: 37.0 at episode 28. Model saved.
+06-11 15:50:41: New best reward: 39.0 at episode 122. Model saved.
+06-11 15:50:41: New best reward: 45.0 at episode 124. Model saved.
+06-11 15:50:41: New best reward: 57.0 at episode 127. Model saved.
+06-11 15:50:41: New best reward: 77.0 at episode 129. Model saved.
+06-11 15:50:44: New best reward: 106.0 at episode 210. Model saved.
+06-11 15:50:45: New best reward: 128.0 at episode 240. Model saved.
+06-11 15:50:50: New best reward: 163.0 at episode 290. Model saved.
+06-11 15:50:50: New best reward: 314.0 at episode 291. Model saved.
+06-11 15:51:04: New best reward: 350.0 at episode 335. Model saved.
+06-11 15:51:04: New best reward: 366.0 at episode 336. Model saved.
+06-11 15:51:04: New best reward: 424.0 at episode 339. Model saved.
+06-11 15:51:04: New best reward: 517.0 at episode 340. Model saved.
+06-11 15:51:06: New best reward: 536.0 at episode 343. Model saved.
+06-11 15:51:06: New best reward: 564.0 at episode 346. Model saved.
+06-11 15:51:07: New best reward: 598.0 at episode 347. Model saved.
+06-11 15:51:07: New best reward: 653.0 at episode 348. Model saved.
+06-11 15:51:08: New best reward: 699.0 at episode 350. Model saved.
+creating environment CartPole-v1 for running the agent...
+
+06-11 15:56:04: Training starting...
+
+06-11 15:56:04: New best reward: 12.0 at episode 0. Model saved.
+06-11 15:56:04: New best reward: 21.0 at episode 1. Model saved.
+06-11 15:56:05: New best reward: 24.0 at episode 30. Model saved.
+06-11 15:56:09: New best reward: 50.0 at episode 167. Model saved.
+06-11 15:56:09: New best reward: 77.0 at episode 168. Model saved.
+06-11 15:56:09: New best reward: 109.0 at episode 174. Model saved.
+06-11 15:56:16: New best reward: 130.0 at episode 230. Model saved.
+06-11 15:56:16: New best reward: 137.0 at episode 238. Model saved.
+06-11 15:56:16: New best reward: 177.0 at episode 241. Model saved.
+06-11 15:56:17: New best reward: 229.0 at episode 245. Model saved.
+06-11 15:56:17: New best reward: 254.0 at episode 249. Model saved.
+06-11 15:56:26: New best reward: 314.0 at episode 279. Model saved.
+06-11 15:56:27: New best reward: 338.0 at episode 282. Model saved.
+06-11 15:56:27: New best reward: 420.0 at episode 283. Model saved.
+06-11 15:56:32: New best reward: 481.0 at episode 295. Model saved.
+06-11 15:56:32: New best reward: 490.0 at episode 298. Model saved.
+06-11 15:56:33: New best reward: 543.0 at episode 301. Model saved.
+creating environment CartPole-v1 for running the agent...
+
+06-11 15:58:04: Training starting...
+
+06-11 15:58:04: New best reward: 14.0 at episode 0. Model saved.
+06-11 15:58:04: New best reward: 26.0 at episode 4. Model saved.
+06-11 15:58:09: New best reward: 53.0 at episode 154. Model saved.
+06-11 15:58:09: New best reward: 55.0 at episode 156. Model saved.
+06-11 15:58:09: New best reward: 63.0 at episode 157. Model saved.
+06-11 15:58:11: New best reward: 135.0 at episode 172. Model saved.
+06-11 15:58:12: New best reward: 136.0 at episode 189. Model saved.
+06-11 15:58:15: New best reward: 177.0 at episode 215. Model saved.
+06-11 15:58:16: New best reward: 179.0 at episode 228. Model saved.
+06-11 15:58:18: New best reward: 192.0 at episode 256. Model saved.
+06-11 15:58:18: New best reward: 308.0 at episode 258. Model saved.
+06-11 15:58:31: New best reward: 424.0 at episode 293. Model saved.
+06-11 15:58:35: New best reward: 461.0 at episode 313. Model saved.
+06-11 15:58:36: New best reward: 474.0 at episode 322. Model saved.
+06-11 15:59:29: New best reward: 487.0 at episode 416. Model saved.
+06-11 15:59:30: New best reward: 562.0 at episode 423. Model saved.
+06-11 15:59:31: New best reward: 574.0 at episode 427. Model saved.
+06-11 15:59:32: New best reward: 621.0 at episode 431. Model saved.
+06-11 15:59:58: New best reward: 763.0 at episode 466. Model saved.
+06-11 16:00:49: New best reward: 922.0 at episode 530. Model saved.
+06-11 16:00:52: New best reward: 1200.0 at episode 538. Model saved.
+
+Training stoped after 538 episodes with average reward: 807.08
+
+
+06-11 16:00:52: Training completed. Saving agent with pickle...
+
+>>> creating environment CartPole-v1 for running the agent...
+
+creating environment CartPole-v1 for running the agent...
+
+06-11 17:25:07: Training starting...
+
+06-11 17:25:07: New best reward: 14.11663378198864 at episode 0. Model saved.
+06-11 17:25:07: New best reward: 18.775384589497534 at episode 2. Model saved.
+06-11 17:25:07: New best reward: 25.881783157187915 at episode 12. Model saved.
+06-11 17:25:07: New best reward: 29.719129347841122 at episode 35. Model saved.
+06-11 17:25:07: New best reward: 49.457289275846314 at episode 43. Model saved.
+06-11 17:25:15: New best reward: 99.43945173822745 at episode 272. Model saved.
+06-11 17:26:02: New best reward: 122.95768266304258 at episode 1591. Model saved.
+creating environment CartPole-v1 for running the agent...
+
+06-11 17:28:15: Training starting...
+
+06-11 17:28:15: New best reward: 11.0 at episode 0. Model saved.
+06-11 17:28:15: New best reward: 12.0 at episode 2. Model saved.
+06-11 17:28:16: New best reward: 13.0 at episode 12. Model saved.
+06-11 17:28:20: New best reward: 14.0 at episode 156. Model saved.
+06-11 17:28:20: New best reward: 15.0 at episode 159. Model saved.
+06-11 17:28:20: New best reward: 17.0 at episode 182. Model saved.
+06-11 17:28:21: New best reward: 20.0 at episode 184. Model saved.
+06-11 17:28:21: New best reward: 21.0 at episode 185. Model saved.
+06-11 17:28:23: New best reward: 148.0 at episode 245. Model saved.
+06-11 17:28:23: New best reward: 149.0 at episode 246. Model saved.
+06-11 17:28:39: New best reward: 164.0 at episode 341. Model saved.
+06-11 17:28:40: New best reward: 171.0 at episode 362. Model saved.
+06-11 17:28:41: New best reward: 172.0 at episode 373. Model saved.
+06-11 17:28:42: New best reward: 263.0 at episode 379. Model saved.
+06-11 17:28:53: New best reward: 429.0 at episode 412. Model saved.
+06-11 17:29:01: New best reward: 500.0 at episode 437. Model saved.
+creating environment CartPole-v1 for running the agent...
+
+06-11 17:32:59: Training starting...
+
+06-11 17:32:59: New best reward: 9.0 at episode 0. Model saved.
+06-11 17:32:59: New best reward: 16.0 at episode 1. Model saved.
+06-11 17:33:03: New best reward: 17.0 at episode 130. Model saved.
+06-11 17:33:03: New best reward: 19.0 at episode 136. Model saved.
+06-11 17:33:05: New best reward: 102.0 at episode 203. Model saved.
+06-11 17:33:08: New best reward: 114.0 at episode 253. Model saved.
+06-11 17:33:08: New best reward: 115.0 at episode 254. Model saved.
+06-11 17:33:09: New best reward: 151.0 at episode 273. Model saved.
+06-11 17:33:09: New best reward: 184.0 at episode 277. Model saved.
+06-11 17:33:10: New best reward: 384.0 at episode 280. Model saved.
+06-11 17:33:46: New best reward: 396.0 at episode 371. Model saved.
+06-11 17:33:53: New best reward: 553.0 at episode 406. Model saved.
+06-11 17:34:10: New best reward: 636.0 at episode 440. Model saved.
+06-11 17:34:11: New best reward: 987.0 at episode 441. Model saved.
+06-11 17:34:16: New best reward: 1200.0 at episode 451. Model saved.
+
+Training stoped after 542 episodes with average reward: 826.00
+
+
+06-11 17:35:54: Training completed. Saving agent with pickle...
+
+>>> creating environment CartPole-v1 for running the agent...
+
+creating environment CartPole-v1 for running the agent...
+
+06-11 17:58:40: Training starting...
+
+06-11 17:58:40: New best reward: 10.0 at episode 0. Model saved.
+06-11 17:58:40: New best reward: 14.0 at episode 1. Model saved.
+06-11 17:58:40: New best reward: 15.0 at episode 3. Model saved.
+06-11 17:58:44: New best reward: 16.0 at episode 136. Model saved.
+06-11 17:58:44: New best reward: 18.0 at episode 137. Model saved.
+06-11 17:58:44: New best reward: 19.0 at episode 148. Model saved.
+06-11 17:58:44: New best reward: 20.0 at episode 155. Model saved.
+06-11 17:58:44: New best reward: 21.0 at episode 165. Model saved.
+06-11 17:58:44: New best reward: 22.0 at episode 167. Model saved.
+06-11 17:58:45: New best reward: 25.0 at episode 190. Model saved.
+06-11 17:58:45: New best reward: 59.0 at episode 191. Model saved.
+06-11 17:58:47: New best reward: 61.0 at episode 231. Model saved.
+06-11 17:58:47: New best reward: 81.0 at episode 232. Model saved.
+06-11 17:58:47: New best reward: 100.0 at episode 235. Model saved.
+06-11 17:58:51: New best reward: 121.0 at episode 267. Model saved.
+06-11 17:58:54: New best reward: 139.0 at episode 302. Model saved.
+06-11 17:58:54: New best reward: 153.0 at episode 304. Model saved.
+06-11 17:58:55: New best reward: 156.0 at episode 306. Model saved.
+06-11 17:59:03: New best reward: 178.0 at episode 354. Model saved.
+06-11 17:59:03: New best reward: 192.0 at episode 360. Model saved.
+06-11 17:59:12: New best reward: 263.0 at episode 400. Model saved.
+06-11 17:59:12: New best reward: 282.0 at episode 401. Model saved.
+06-11 17:59:14: New best reward: 462.0 at episode 409. Model saved.
+06-11 17:59:38: New best reward: 647.0 at episode 484. Model saved.
+06-11 17:59:40: New best reward: 746.0 at episode 496. Model saved.
+06-11 17:59:42: New best reward: 779.0 at episode 506. Model saved.
+06-11 18:00:01: New best reward: 1149.0 at episode 601. Model saved.
+06-11 18:00:09: New best reward: 1163.0 at episode 615. Model saved.
+06-11 18:00:12: New best reward: 1200.0 at episode 624. Model saved.
+creating environment CartPole-v1 for running the agent...
+
+06-11 18:04:25: Training starting...
+
+06-11 18:04:25: New best reward: 10.0 at episode 0. Model saved.
+06-11 18:04:25: New best reward: 16.0 at episode 2. Model saved.
+06-11 18:04:29: New best reward: 18.0 at episode 109. Model saved.
+06-11 18:04:29: New best reward: 20.0 at episode 110. Model saved.
+06-11 18:04:29: New best reward: 47.0 at episode 134. Model saved.
+06-11 18:04:31: New best reward: 53.0 at episode 168. Model saved.
+06-11 18:04:31: New best reward: 70.0 at episode 180. Model saved.
+06-11 18:04:35: New best reward: 112.0 at episode 257. Model saved.
+06-11 18:04:35: New best reward: 126.0 at episode 260. Model saved.
+06-11 18:04:35: New best reward: 127.0 at episode 262. Model saved.
+06-11 18:04:36: New best reward: 160.0 at episode 266. Model saved.
+06-11 18:04:41: New best reward: 177.0 at episode 311. Model saved.
+06-11 18:04:46: New best reward: 185.0 at episode 350. Model saved.
+06-11 18:04:46: New best reward: 192.0 at episode 351. Model saved.
+06-11 18:04:46: New best reward: 198.0 at episode 353. Model saved.
+06-11 18:04:53: New best reward: 419.0 at episode 375. Model saved.
+06-11 18:05:04: New best reward: 520.0 at episode 412. Model saved.
+06-11 18:05:13: New best reward: 741.0 at episode 447. Model saved.
+06-11 18:05:15: New best reward: 925.0 at episode 456. Model saved.
+06-11 18:05:40: New best reward: 1926.0 at episode 501. Model saved.
+06-11 18:05:43: New best reward: 2500.0 at episode 504. Model saved.
+
+Training stoped after 776 episodes with average reward: 2061.07
+
+
+06-11 18:11:14: Training completed. Saving agent with pickle...
+
+>>> creating environment CartPole-v1 for running the agent...
+

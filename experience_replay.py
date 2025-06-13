@@ -24,6 +24,10 @@ class ReplayMemory():
         # // append a transition data tuple to the memory queue
         # // the tuple is: (state, action, new_state, reward, terminated)
         self.memory.append(transition)
+    
+    def merge_memory(self, other_memory):
+        # // merge another memory queue into this memory queue
+        self.memory.extend(other_memory.memory)
 
     def sample(self, sample_size):
         # // zip(tuple) is used to transpose the list of tuples into a tuple of lists
