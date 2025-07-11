@@ -526,7 +526,7 @@ class Agent:
             # ------------------------------------------------------------------------
                 
             print(f"Ep: {episode}, Trans#: {total_transitions}, R: {episode_reward:.1f}, avg_ep_R: {avg_episode_R:.2f}, " +\
-                  f"epsilon: {epsilon:.5f}, exploration_prob: {exploration_prob_mask}， " +\
+                  f"epsilon: {epsilon:.5f}, exploration_prob: {exploration_prob_mask}，" +\
                   f"mem_len: {memory.__len__()}, **men_len: {self.important_experience.__len__()}, ")
             
             # // breaking training loop if the average reward is high enough

@@ -10,7 +10,7 @@ class ReplayMemory():
         if seed is not None:
             random.seed(seed)
     
-    def clear(self, percentage_to_clear=1):
+    def clear(self, percentage_to_clear=1.0):
         if percentage_to_clear >= 1:
             self.memory.clear()
         else:
