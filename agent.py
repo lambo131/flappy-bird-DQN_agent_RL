@@ -15,8 +15,8 @@ import msvcrt
 import pickle
 import argparse
 import pandas as pd
-from key_listener import KeyListener
 import threading
+import shutil
 
 from dqn import DQN
 from experience_replay import ReplayMemory
@@ -25,7 +25,7 @@ matplotlib.use("Agg")
 DATE_FORMAT = "%m-%d %H:%M:%S"
 
 # // create log folder
-runs_dir = "C:\\Users\\ASUS\\OneDrive - HKUST Connect\\1_Projects\\FYP\\Reinforcement learning\\Flappy bird DQN project\\runs"
+runs_dir = "./runs"
 os.makedirs(runs_dir, exist_ok=True)
 
 # specify to use gpu if avaiable as the computation device
@@ -62,7 +62,7 @@ def get_values_sd_from_mean(input_list, sd):
     
     return values_sd_from_mean
 
-def get_env(agent, render: bool, old_env=None):
+def get_env(agent, render: bool, audio_on=False, old_env=None):
     """
     Creates a new environment with specified render mode, closing the old one if it exists.
     
@@ -90,7 +90,8 @@ def get_env(agent, render: bool, old_env=None):
         env = gymnasium.make(
             "FlappyBird-v0", 
             render_mode=current_render_mode, 
-            use_lidar=False
+            use_lidar=False,
+            audio_on=audio_on,
         )
     elif agent.env_id == "MountainCar-v0":
         env = gymnasium.make(
@@ -98,6 +99,9 @@ def get_env(agent, render: bool, old_env=None):
             render_mode=current_render_mode, 
             goal_velocity=0.1
         )
+    elif agent.env_id == "LunarLander-v3":
+        env = gymnasium.make("LunarLander-v3", continuous=False, gravity=-10.0,
+               enable_wind=False, wind_power=15.0, turbulence_power=1.5)
     else:
         raise ValueError(f"Unknown environment ID: {agent.env_id}")
     
@@ -106,12 +110,13 @@ def get_env(agent, render: bool, old_env=None):
 
 class Agent:
     # // the Agent __init__ function defines the hyperparaters of the agent
-    def __init__(self, hyperparameter_set, key_listener=None):
+    def __init__(self, hyperparameter_set, log=True):
         # settings from hyperparameters.yml
-        yaml_path = "C:\\Users\\ASUS\\OneDrive - HKUST Connect\\1_Projects\\FYP\\Reinforcement learning\\Flappy bird DQN project\\hyperparameters.yml"
+        yaml_path = "./hyperparameters.yml"
         with open(yaml_path, 'r') as file:
             yaml_all = yaml.safe_load(file)
             hyperparameter = yaml_all[hyperparameter_set]
+        self.hyperparameter_set = hyperparameter_set
         self.env_id = hyperparameter['env_id']
         self.train_stop_reward = hyperparameter['train_stop_reward']
         self.episode_stop_reward = hyperparameter['episode_stop_reward']
@@ -133,10 +138,11 @@ class Agent:
         self.optimizer = torch.optim.Adam(self.policy_network.parameters(), lr=hyperparameter['learning_rate'])
 
         # -------------------class variables-------------------
-        self.key_listener = key_listener
+        self.enable_log = log
         # // run folder files
         self.LOG_FILE = os.path.join(runs_dir, f'{hyperparameter_set}.log')
         self.MODEL_FILE = os.path.join(runs_dir, f'{hyperparameter_set}.pt')
+        self.OLD_MODEL_FILE = os.path.join(runs_dir, f'{hyperparameter_set}_old.pt')
         self.GRAPH_FILE = os.path.join(runs_dir, f'{hyperparameter_set}.png')
         self.EXPLORATION_FILE = os.path.join(runs_dir, f'{hyperparameter_set}.csv')
         self.EXPERIENCE_FILE = os.path.join(runs_dir, f'{hyperparameter_set}_exp.pkl')
@@ -147,16 +153,21 @@ class Agent:
         self.exploration_df = pd.DataFrame(columns=['episode', 'epsilon', 'reward'])    
         self.epsilon = self.initial_epsilon
 
+        self.save_old_network()
+
         self.to_log(f"\n{get_current_time()}: creating agent...",print_enable=True)
         self.to_log(f"GPU Name: {torch.cuda.get_device_name(device)}", print_enable=True) 
         self.to_log("", print_enable=True)
 
+    def __del__(self):
+        print(f"Destructor called for {self.hyperparameter_set}")
+
     def to_log(self, str="", print_enable=True):
         if print_enable:
             print(str)
-
-        with open(self.LOG_FILE, 'a') as file:
-            file.write(str + '\n')
+        if self.enable_log == True:
+            with open(self.LOG_FILE, 'a') as file:
+                file.write(str + '\n')
 
     def save_experience(self, file_path):
         '''memory_temp = ReplayMemory(self.experience.__len__()+self.important_experience.__len__())
@@ -182,6 +193,10 @@ class Agent:
         else:  
             print(f"### could not load experience, {file_path} not found.\n")
     
+    def save_old_network(self):
+        if os.path.exists(self.MODEL_FILE):
+            shutil.copyfile(self.MODEL_FILE, self.OLD_MODEL_FILE)
+
     def save_policy_network(self, model_path):
         print(f">>> saving policy network to {model_path}\n")
         torch.save(self.policy_network.state_dict(), model_path)
@@ -206,9 +221,8 @@ class Agent:
         self.important_experience.clear(percentage)
 
     def get_exploration_prob_mask(self, action_dim):
-        action_1_prob = 0.8 - 0.2 + random.random() *0.4
-
-        return np.array([action_1_prob, 1-action_1_prob])
+        action_0_prob = 0.8 - 0.2 + random.random() * 0.4  # no flap action probability distribution from 0.6 to 1.0
+        return np.array([action_0_prob, 1-action_0_prob]) # [0.6,0.4] ~ [1.0, 0]
                          
     def run(self, episodes=-1, render=False):
         self.to_log(f">>> creating {self.env_id} for *running* the agent...\n", print_enable=True)
@@ -217,6 +231,7 @@ class Agent:
 
         count_transitions = 0
         current_render_en = render
+        audio_en = False
         state_dim = env.observation_space.shape[0]
         action_dim = env.action_space.n
 
@@ -230,7 +245,8 @@ class Agent:
                 key = msvcrt.getch()
                 if key == b'r':  # ESC key
                     current_render_en = not current_render_en
-                    env = get_env(self, render=not current_render_en, old_env=env)      
+                    audio_en = not audio_en
+                    env = get_env(self, render=not current_render_en,audio_on=not audio_en, old_env=env)      
 
             #  reset the environment for a new episode
             obs, _ = env.reset()
@@ -259,7 +275,7 @@ class Agent:
             
             print(f"Ep: {episode}, trans: {count_transitions}, R: {episode_reward:.1f}")
 
-    def explore(self, render=False, epsilon=0.01, episodes=-1, update_best_reward=True):
+    def explore(self, render=False, epsilon=0.01, episodes=-1, recursive=False, depth=0):
         self.to_log(f">>> creating {self.env_id} for *exploring* the agent...\n", print_enable=True)
 
         env = get_env(self, render=False)
@@ -288,7 +304,7 @@ class Agent:
             obs, _ = env.reset()
             episode_reward = 0.0 # initalize episode reward
             # random epsilon
-            epsilon = random.random()*0.6
+            epsilon = (epsilon*0.5) + random.random()*epsilon
             epsilon_history.append(epsilon)
             # random probability mask
             exploration_prob_mask = self.get_exploration_prob_mask(action_dim=env.action_space.n)
@@ -320,7 +336,7 @@ class Agent:
                 
             reward_history.append(episode_reward)
 
-            print(f"Ep: {episode}, trans: {count_transitions}, epsilon: {epsilon:.2f}, " +\
+            print(f"Ep: {episode}, trans: {count_transitions}, epsilon: {epsilon:.5f}, " +\
                   f"R: {episode_reward:.1f}, mem_len: {self.experience.__len__()}")
             
         self.to_log(f">>> exploration completed: "+\
@@ -331,13 +347,15 @@ class Agent:
         print()
 
         if np.max(reward_history) > self.best_reward:
-            if update_best_reward:
-                self.best_reward = np.max(reward_history)
-                self.to_log(f"\tnew best reward(explore): {self.best_reward}", print_enable=True)
-            else:
+            self.best_reward = np.max(reward_history)
+            temp_best_reward = self.best_reward
+            if recursive:
                 self.to_log(f"\tstarting recursive explore: {self.best_reward}", print_enable=True)
-                self.explore(episodes=100, update_best_reward=update_best_reward)
-        
+                self.explore(episodes=100,depth=depth+1)
+                self.best_reward = temp_best_reward
+            if depth == 0:
+                self.to_log(f"\tnew best reward(explore): {self.best_reward}", print_enable=True)
+
         # Create a Pandas DataFrame from the dictionary
         exploration_data = {'epsilon': epsilon_history, 'prob_mask': prob_mask_history, 'reward': reward_history}
         self.exploration_df = pd.DataFrame(exploration_data)
@@ -354,8 +372,6 @@ class Agent:
         self.target_network.load_state_dict(self.policy_network.state_dict())
         # // initialize Replay Memory
         memory = self.get_experience()
-        # start key listener for debugging utility
-        # self.key_listener.start()
 
         # // variables
         rewards_per_episode = []
@@ -385,15 +401,6 @@ class Agent:
                 if key == b'r':  # r key
                     current_render_en = not current_render_en
                     env = get_env(self, render=not current_render_en, old_env=env)               
-        
-            '''if self.key_listener.is_key_pressed('r'):
-                self.key_listener.pop_first()
-                current_render_en = not current_render_en
-                env = get_env(self, render=not current_render_en, old_env=env)
-            if self.key_listener.is_key_pressed('s'): # end training manually
-                self.key_listener.pop_first()
-                self.wrap_up()
-                return'''
 
             #  reset the environment for a new episode
             obs, _ = env.reset()
@@ -447,7 +454,7 @@ class Agent:
                 # gradually decay epsilon
                 epsilon_normal = max(self.min_epsilon, epsilon_normal * self.epsilon_decay)
                 
-                if random.random() < 0.00005 and epsilon_normal < self.min_epsilon*1.01:
+                if random.random() < 0.5 and epsilon_normal < self.min_epsilon*1.01:
                     epsilon_normal = 0.3
                 epsilon = epsilon_normal
                 # enable exploration mode when the episode reward is high enough
@@ -487,8 +494,9 @@ class Agent:
                 # forget some of the older transitions
                 memory.clear(0.5)
                 #skip_train = True
-                self.explore(episodes=100, epsilon=0.002, update_best_reward=False)  # to explore world with this good model
-
+                temp_best_reward = self.best_reward
+                self.explore(episodes=100, epsilon=0.0005)  # to explore world with this good model
+                self.best_reward = temp_best_reward # do not let explore update best reward here
             # --------------network update----------------
             for i in range(transitions_per_episode):
                 # // check if the replay memory is large enough to sample a mini-batch
@@ -518,7 +526,7 @@ class Agent:
             # ------------------------------------------------------------------------
                 
             print(f"Ep: {episode}, Trans#: {total_transitions}, R: {episode_reward:.1f}, avg_ep_R: {avg_episode_R:.2f}, " +\
-                  f"epsilon: {epsilon:.3f}, eps-norm: {epsilon_normal:.2f}, " +\
+                  f"epsilon: {epsilon:.5f}, exploration_prob: {exploration_prob_mask}， " +\
                   f"mem_len: {memory.__len__()}, **men_len: {self.important_experience.__len__()}, ")
             
             # // breaking training loop if the average reward is high enough
@@ -531,7 +539,6 @@ class Agent:
     def wrap_up(self):
         self.to_log(f"\n>>> Wrapping up...\n", print_enable=True)
         self.save_experience(self.EXPERIENCE_FILE)
-        self.key_listener.stop()
         self.to_log(f"\n>>> agent exit...\n", print_enable=True)
 
     def save_graph(self, rewards_per_episode, epsilon_history):
@@ -625,8 +632,8 @@ if __name__ == "__main__":
     parser.add_argument("--load_policy", action='store_true', help='Load policy network from file')
     args = parser.parse_args()
 
-    key_listener = KeyListener()
-    my_agent = Agent(hyperparameter_set=args.hyperparameter_set, key_listener=key_listener)
+    # create DQN agent
+    my_agent = Agent(hyperparameter_set=args.hyperparameter_set)
     
     if args.train:
         # Train the agent
@@ -634,7 +641,7 @@ if __name__ == "__main__":
             my_agent.load_experience(file_path=my_agent.EXPERIENCE_FILE)
         if args.load_policy:
             my_agent.load_policy_network()
-            my_agent.explore(episodes=100, epsilon=0.03, update_best_reward=True)
+            my_agent.explore(episodes=100, epsilon=0.0005)
         
         my_agent.train(render=args.render)
         # Save the trained agent to a file

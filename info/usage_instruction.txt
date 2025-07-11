@@ -1,0 +1,25 @@
+1. Make sure the project directory has these files:
+    agent.py
+    dqn.py
+    expereience_replay.py
+    hyperparameters.yml
+
+2. Install all the pip libraries with conda using the file argument:
+    Create a New Environment and Install the Libraries. The environment.yml file is in the "../info/" folder
+        conda env create --name new_env --file environment.yml
+        # This recreates the exact environment, including pip dependencies.
+
+3. In VScode studio(which I used), click on debug tab, and create a launch file for argument parsing
+    Argument parsing allows you to run agent.py with different options. -> See more in ../info/commands.txt
+    - the examples of launch.json and hyperparameters.yml in "../info" folder
+
+4. To run the code, in debug tab, run agent.py by selecting the launch method you defined in launch.json
+
+5. You can see the code print outputs in the terminal. You can see training progress graph (.png), log (.txt), weight files (.pt) in the '../runs' folder
+
+6. If model is not learning well after ~ 10 minutes (look at the png file to see learning reward history), you can try stoping the code and running it again. Remember to enable
+    "--load_exp" and
+    "--load_policy"
+   So the agent can retain model weights and agent memory replay experiences data, to improve on the previous trainings.
+
+Have fun!!!

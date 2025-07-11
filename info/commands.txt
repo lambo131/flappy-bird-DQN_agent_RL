@@ -6,14 +6,14 @@ ___Example commands to run the Agent:___
 
     python ./"Flappy bird DQN project"/agent.py cartpole_1 v1 --run  
     python ./"Flappy bird DQN project"/agent.py cartpole_2 v1 --run  
-    python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --run  
+    python ./agent.py flappybird_1 v1 --run  
 
     # load experience (transition memory)
     python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train --load_exp
     # agent loads saved policy network weights 
     python ./"Flappy bird DQN project"/agent.py flappybird_1 v1 --train --load_policy 
 
-flags:
+Argument options:
     '--train', action='store_true', help='Train the agent'
     '--run', action='store_true', help='Run the agent'
     "--render", action='store_true', help='Render the environment during training or running'
